@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-const Stopwatch = () => {
-    const formatTime = (seconds) => {
-        const minutes = Math.floor(seconds / 60);
-        const remainingSeconds = seconds % 60;
-        return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
-    };
+const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
+};
 
+const Stopwatch = () => {
     const [time, setTime] = useState(0);
     const [timeOn, setTimeOn] = useState(false);
 
