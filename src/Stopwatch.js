@@ -30,7 +30,7 @@ const Stopwatch = () => {
     }, [timeOn]);
 
     return (
-        <div style={{ marginLeft: "15px" }}>
+        <div>
             <h1>Stop Watch</h1>
             <p>Time: {formatTime(time)}</p>
             <input type="button" name="Start" value={timeOn ? "Stop" : "Start"} onClick={handleClick} />
